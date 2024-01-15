@@ -1,0 +1,76 @@
+/* Reset some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: whitesmoke;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url('1.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header styles */
+header {
+    background-color: #1976D2;
+    color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Options section styles */
+.options {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.option-button {
+    display: block;
+    background-color: #1976D2;
+    color: white;
+    text-align: center;
+    padding: 20px 40px;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.option-button:hover {
+    background-color: #0f4aa0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1976D2;
+    color: white;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}

@@ -1,0 +1,113 @@
+/* Reset some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121111;
+    color: black; 
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url('1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0; 
+}
+
+/* Header styles */
+header {
+    background-color: #1976D2;
+    color: black; 
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/* "Final Results" heading styles */
+.results-heading {
+    font-size: 36px; 
+    text-align: center;
+    margin-top: 20px;
+    color: white; 
+    background-color: #1976D2; 
+    padding: 10px 0; 
+    border-radius: 5px;
+}
+
+.winner-container {
+    background-color: #0f4aa0; 
+    color: white; 
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.winner-title {
+    font-size: 24px; 
+}
+
+.winner-info {
+    font-size: 30px; 
+    font-weight: bold;
+}
+
+/* Candidates list styles */
+.candidates-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.candidate-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.candidate-name {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.candidate-votes {
+    display: block;
+    text-align: center;
+}
+
+/* Back to Election link styles */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #1976D2; 
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline; 
+}
+
+footer {
+    background-color: #1976D2;
+    color: white;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}

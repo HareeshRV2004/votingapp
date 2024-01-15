@@ -1,0 +1,105 @@
+/* Reset some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121111;
+    color: black;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    /* Background image */
+    background-image: url('1.jpg'); /* Adjust the path */
+    background-size: cover;
+    background-position: center;
+    margin: 0; /* Remove margin to extend to full width */
+}
+
+/* Header styles */
+header {
+    background-color: #1976D2;
+    color: black;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Options section styles */
+.options {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Center the form and button */
+.form {
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for the form */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form input[type="text"] {
+    width: 100%;
+    max-width: 300px; /* Set a maximum width for the input box */
+    padding: 10px;
+    margin-bottom: 10px; /* Reduced margin between input boxes */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Center the "Add" button */
+.option-button {
+    display: block;
+    background-color: #1976D2;
+    color: white;
+    text-align: center;
+    padding: 10px 40px; /* Reduced padding for the button */
+    width: auto; /* Remove width to center button */
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.option-button:hover {
+    background-color: #0f4aa0;
+}
+
+footer {
+    background-color: #1976D2;
+    color: white;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}

@@ -1,0 +1,143 @@
+/* Reset some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and font styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    background-color: #f5f5f5;
+    color:rgb(11, 11, 11);
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #1976D2;
+    color: rgb(6, 6, 6);
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0f4aa0; /* Change color on hover */
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 80px 0; /* Increased padding for a larger hero section */
+    color: rgb(10, 10, 10);
+}
+
+.hero h1 {
+    font-size: 48px; /* Larger font size for emphasis */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px; /* Increased font size for readability */
+}
+
+/* Options section styles */
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Increased top margin for separation */
+}
+
+.option {
+    margin: 0 20px;
+}
+
+.government-option, .voter-option {
+    display: block;
+    background-color: #1976D2;
+    color: white;
+    text-align: center;
+    padding: 20px 40px; /* Increased padding for larger buttons */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.government-option:hover, .voter-option:hover {
+    background-color: #0f4aa0;
+}
+
+
+
+.about h2 {
+    font-size: 24px; /* Larger font size for section headings */
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    font-size: 20px; /* Slightly larger font size for subheadings */
+    margin-top: 20px; /* Increased top margin for separation */
+}
+
+.about ul {
+    margin-left: 20px; /* Adjusted margin for list items */
+}
+
+/* Footer styles */
+footer {
+    background-color: #1976D2;
+    color: white;
+    padding: 40px 0; /* Increased padding for the footer */
+    border-top: 1px solid #ccc;
+}
+
+.footer-info p {
+    font-size: 16px; /* Larger font size for footer text */
+    color: #ccc;
+}
+/* Your existing CSS styles */
+
+/* Background image with low opacity */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('1.jpg');
+    opacity: 1; /* Adjust opacity as needed */
+    pointer-events: none; /* Allows clicks to pass through the background */
+    z-index: -1; /* Puts the background behind all other content */
+}
