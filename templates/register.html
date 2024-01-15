@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Commission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='r.css') }}">
+<body>
+    <header>
+        <h1 style="color: black;">Election Commission</h1>
+    </header>
+
+    <div class="hero">
+        <h1>Register Voter</h1>
+        <form action="/register" method="POST" class="form">
+            <label for="voter_ids">Enter Voter ID</label>
+            <input type="text" id="voter_ids" name="voter_ids" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2023 Election Commission</p>
+        </div>
+    </footer>
+</body>
+</html>

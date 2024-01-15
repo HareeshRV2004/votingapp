@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Commission</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='verify.css') }}">
+</head>
+<body>
+    <header>
+        <h1 style="color: black;">VOTER ID VERIFICATION</h1>
+    </header>
+    <body>
+        <form action="/verify_voter" method="POST">
+            <label for="voter_id">Enter Voter ID:</label>
+            <input type="text" id="voter_id" name="voter_id" required>
+            <button type="submit">Verify</button>
+        </form>
+        
+        {% if error_message %}
+        <p style="color: red;">{{ error_message }}</p>
+        {% endif %}
+        <br>
+        <footer>
+            <p>&copy; 2023 Election Commission</p>
+        </footer>
+    </body>
+</html>

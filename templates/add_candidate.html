@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Candidate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='add_candidate.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Add New Candidate</h1>
+    </header>
+
+    <div class="hero">
+        <form class="form" action="/add_candidate" method="POST">
+            <label for="new_candidate">Candidate Name:</label>
+            <input type="text" id="new_candidate" name="new_candidate" required>
+            
+            <label for="new_party">Party Name:</label>
+            <input type="text" id="new_party" name="new_party" required>
+
+            <button class="option-button" type="submit">Add</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Election Commission</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Commission of India</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='2.png') }}" alt="">
+            </div>
+            <nav>                                                   
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/ec">ELECTION COMISSION</a></li>
+                    <li><a href="/verify_voter">VOTE</a></li>
+                    <li><a href="/results">RESULTS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Election Commission of India</h1>
+            <p>Ensuring Free and Fair Elections for a Strong Democracy</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <h2>About the Blockchain Voting System</h2>
+            <p>The Blockchain Voting System is a cutting-edge platform designed to revolutionize the way elections are conducted. Our system leverages blockchain technology to ensure secure and transparent voting processes.</p>
+
+            <h3>How It Works</h3>
+            <p>Our system operates on a decentralized network, offering the following key features:</p>
+            <ul>
+                <li><strong>Voter Verification:</strong> Secure verification of registered voters using unique identification credentials.</li>
+                <li><strong>Transparent Voting:</strong> Each vote is recorded as a secure and immutable transaction on the blockchain, ensuring transparency and auditability.</li>
+                <li><strong>Anonymous Voting:</strong> Voter identities are kept private while ensuring the integrity of the vote.</li>
+                <li><strong>Real-time Results:</strong> Results are calculated in real-time and can be verified by anyone on the blockchain.</li>
+            </ul>
+
+            <h3>Benefits</h3>
+            <p>Our blockchain-based voting system offers a range of benefits:</p>
+            <ul>
+                <li><strong>Security:</strong> Votes are cryptographically secured, making it extremely difficult for malicious actors to tamper with the results.</li>
+                <li><strong>Transparency:</strong> The entire voting process is transparent and verifiable, enhancing trust in the electoral system.</li>
+                <li><strong>Accessibility:</strong> Voters can cast their ballots from the comfort of their homes using a secure online platform.</li>
+                <li><strong>Efficiency:</strong> Results are tabulated quickly and accurately, reducing the time it takes to determine election outcomes.</li>
+            </ul>
+
+            <p>We are committed to ensuring the integrity of elections and making the voting process more convenient and secure for citizens. Join us in the future of democracy with blockchain technology.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="{{ url_for('static', filename='2.png') }}" alt="">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2023 Election Commission of India</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registered Voters</title>
+</head>
+<body>
+    <h1>List of Registered Voters</h1>
+    <ul>
+        {% for voter in voters %}
+            <li>{{ voter.address }} - Voter ID: {{ voter.voter_id }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election DApp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <header>
+        <h1>CAST YOUR VOTE</h1>
+    </header>
+    
+    <!-- Display the error message if it exists -->
+    {% if error_message %}
+    <div class="error-message">
+        <p>{{ error_message }}</p>
+    </div>
+    {% endif %}
+
+    <ul>
+        {% for candidate in candidates %}
+        <li>
+            <span>{{ candidate.name }}</span>
+            <span>Party: {{ candidate.voteCount }}</span>
+            <form action="/vote" method="POST">
+                <input type="hidden" name="candidate_id" value="{{ candidate.id }}">
+                <button type="submit">Vote</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+    <footer>
+        <p>&copy; 2023 Election Commission</p>
+    </footer>
+</body>
+</html>

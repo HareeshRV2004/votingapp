@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='results.css') }}">
+</head>
+<body>
+    <h1 class="results-heading">Final Results</h1>
+    <div class="winner-container">
+        <h2 class="winner-title">Winner:</h2>
+        <div class="winner-info">
+            <span>{{ winner_name }}</span>
+        </div>
+    </div>
+
+    <h3>Leaderboard</h3>
+    <ul class="candidates-list">
+        {% for candidate in candidates %}
+        <li class="candidate-item">
+            <span class="candidate-name">{{ candidate.name }}</span>
+            <span class="candidate-votes">Votes: {{ candidate.voteCount }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <footer>
+        <p>&copy; 2023 Election Commission</p>
+    </footer>
+</body>
+</html>

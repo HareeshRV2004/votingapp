@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Commission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='ec.css') }}">
+<body>
+    <header>
+        <h1>Election Commission</h1>
+    </header>
+
+    <div class="hero">
+        <div class="options">
+            <div class="option">
+                <a href="/add_candidate" class="option-button">Add Candidate</a>
+            </div>
+            <div class="option">
+                <a href="/register" class="option-button">Add Voter</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2023 Election Commission</p>
+        </div>
+    </footer>
+</body>
+</html>
