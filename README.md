@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ```
 
 ```bash
-python analytics.py
+python app.py
 ```
 
 
